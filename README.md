@@ -1,0 +1,4 @@
+screenrc
+========
+
+my screen configure
