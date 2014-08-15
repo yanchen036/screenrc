@@ -4,5 +4,9 @@ hardstatus on
 vbell off
 #hardstatus alwayslastline
 termcapinfo xterm 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
-#hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d"
-caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%m/%d %{g}%H %{-}"
+#hardstatus string "%{.dG}%-w%{.rY}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d"
+#caption always "%{= kW}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%m/%d %{g}%H %{-}"
+# kW,kG are color options, live it empty will use the system set
+# http://www.gnu.org/software/screen/manual/html_node/String-Escapes.html
+caption always "%{= }%-w%{= }%{+b}[%n %t]%{-b}%{= }%+w %=%m/%d %{g}%H %{-}"
+#hardstatus string "%{= g} %{= w}%-w%{=r}%n %t%{-}%+W"
